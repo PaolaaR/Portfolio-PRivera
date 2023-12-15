@@ -1,8 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import priveran1 from "../assets/img/priveran1.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
   return (
@@ -11,14 +10,13 @@ export const Footer = () => {
         <Row className="align-items-center">
             <Col xs={12} md={6}>
                 <div className="footer-logo">
-                    <img src={logo} alt="Logo" />
+                    <img src={priveran1} alt="Logo" />
                 </div>
             </Col>
             <Col xs={12} md={6}>
                 <div className="footer-social">
                     <a href="#"><img src={navIcon1} alt="" /></a>
                     <a href="#"><img src={navIcon2} alt="" /></a>
-                    <a href="#"><img src={navIcon3} alt="" /></a>
                 </div>
     
             <p>Copyright 2022. All Rights Reserved</p>
