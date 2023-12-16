@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "Translator" ];
+  const toRotate = ["Web Developer", "Web Designer", "Translator"];
   const period = 2000;
 
   useEffect(() => {
@@ -54,19 +54,21 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Paola`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Translator", "Interpreter" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline ">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Paola`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Translator", "Interpreter" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>"As a fullstack web developer, I bring a unique combination of skills and experiences. As a translator and interpreter I showcase an aptitude for linguistics and effective communication.<br></br> My professional background includes roles as a service agent and customer specialist, providing me with valuable experience in client interactions and problem-solving. I have a keen interest in learning and continuous improvement, and I am well-versed in understanding and implementing Key Performance Indicators (KPIs) to measure and enhance project success.<br></br> With a passion for technology and a commitment to excellence, I am eager to contribute my skills and dedication to dynamic and innovative projects in the field of web development."</p>
+                  <button onClick={() => window.location.href = 'https://www.linkedin.com/in/priveran/'}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>

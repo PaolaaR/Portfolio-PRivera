@@ -14,27 +14,27 @@ export const Projects = () => {
   const projects = [
     {
       title: "Landing Page English Class",
-      description: "Desarrollo de una interfaz utilizando HTML y CSS",
+      description: "Development of an interface using HTML and CSS.",
       imgUrl: projImg1,
     },
     {
       title: "CRUD Travel",
-      description: "Aplicación de operaciones CRUD estrucuturado bajo un paradigma de programación",
+      description: "Structured CRUD Operations Application under a Programming Paradigm.",
       imgUrl: projImg2,
     },
     {
       title: "Movies Dashboard",
-      description: "Aplicación de datos con conexión a API e interfaz",
+      description: "Top Rated Movies Data Application with API connection and interface design.",
       imgUrl: projImg3,
     },
     {
       title: "Restaurant Empanados App",
-      description: "Aplicación web utilizando React, Vite y Firebase.",
+      description: "Web Application using React, Vite and Firebase.",
       imgUrl: projImg4,
     },
     {
       title: "Ecommerce Mugs",
-      description: "Aplicación Fullstack integrando MongoDB, Express, React Y NodeJs",
+      description: "App Fullstack using MongoDB, Express, React Y NodeJs.",
       imgUrl: projImg5,
     },
   ];
@@ -46,39 +46,42 @@ export const Projects = () => {
           <Col size={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p>"I have successfully completed a rigorous Full Stack Web Developer bootcamp where I designed and implemented several impactful projects. Leveraging my proficiency in a lot fo technologies, I developed dynamic and responsive web applications that showcase my ability to create engaging user experiences.<br></br>
+                    These projects are hosted on my GitHub page, providing a hands-on demonstration of my coding skills and problem-solving capabilities.<br></br>
+                    Feel free to explore these projects on my <a href="https://github.com/PaolaaR/">GitHub repository</a> "
+                  </p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">My Projects</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {
+                            projects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
                                 />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="section">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
