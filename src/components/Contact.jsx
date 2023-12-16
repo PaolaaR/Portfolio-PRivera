@@ -26,12 +26,17 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5173/contact", {
+    let response = await fetch("https://node-email-yjjq.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
-      body: JSON.stringify(formDetails),
+      body: JSON.stringify({
+        "from":"onboarding@resend.dev",
+        "to":"p.riveranovoa@gmail.com",
+        "subject": "de: "+formDetails.firstName+" "+formDetails.lastName,
+        "html": formDetails.email+" "+formDetails.phone + "<br>" +formDetails.message
+      }),
     });
     setButtonText("Send");
     let result = await response.json();
