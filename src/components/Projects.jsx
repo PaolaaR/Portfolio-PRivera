@@ -13,27 +13,27 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Landing Page English Class",
+      title: <a href="https://paolaar.github.io/LandingPage/"> Landing Page English Class </a>,
       description: "Development of an interface using HTML and CSS.",
       imgUrl: projImg1,
     },
     {
-      title: "CRUD Travel",
+      title: <a href="https://paolaar.github.io/ProyectoCrud/"> CRUD Travel </a>,
       description: "Structured CRUD Operations Application under a Programming Paradigm.",
       imgUrl: projImg2,
     },
     {
-      title: "Movies Dashboard",
+      title: <a href="https://paolaar.github.io/Dashboard/"> Movies Dashboard </a>,
       description: "Top Rated Movies Data Application with API connection and interface design.",
       imgUrl: projImg3,
     },
     {
-      title: "Restaurant Empanados App",
+      title:<a href="https://paolaar.github.io/my-restaurant-app/"> Restaurant Empanados App </a>,
       description: "Web Application using React, Vite and Firebase.",
       imgUrl: projImg4,
     },
     {
-      title: "Ecommerce Mugs",
+      title: <a href="https://paolaar.github.io/fullstack-ecommerce/"> Ecommerce Mugs</a>,
       description: "App Fullstack using MongoDB, Express, React Y NodeJs.",
       imgUrl: projImg5,
     },

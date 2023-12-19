@@ -1,8 +1,11 @@
-# React + Vite
+Proyecto que consta de la construcción de mi perfil profesional  realizado con todo lo aprendido 
+en el bootcamp de Desarollo web full stack Universidad del Desarrollo (UDD)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En mi página se establece:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Quién soy
+Conocimientos/habilidades 
+Tu portafolio de evidencias
+URL hacia mi repositorio
+URL hacia mis demo online 
+Descripción de mis proyectos
